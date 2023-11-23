@@ -4,6 +4,10 @@
 }
 
 /* HEADER */
+header {
+  display: flex;
+  align-items: center;
+}
 
 #LOGO {
   font-weight: 600;
@@ -14,8 +18,13 @@
 }
 
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0px;
+}
+
+li {
+  margin-left: 4rem;
 }
 
 a {
@@ -52,4 +61,18 @@ input {
 
 label {
   padding-right: 10px;
+}
+
+/* MY PROJECTS */
+.figure {
+  margin-left: 0%;
+}
+.my-projects {
+  width: 40%;
+}
+/* category */
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
