@@ -31,12 +31,35 @@ a {
   color: black;
 }
 
+@media screen and (max-width: 465px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  ul {
+    margin-top: 0;
+  }
+}
+
 /* MAIN */
 
 .IMG_martina {
   width: 20%;
 }
 
+@keyframes IMG_martina {
+  40% {
+    transform: rotate(-20deg) scale (1, 1);
+  }
+  25% {
+    transform-scale: (1, 2);
+  }
+}
 /* FOOTER */
 
 footer {
@@ -70,9 +93,38 @@ label {
 .my-projects {
   width: 40%;
 }
+
 /* category */
 
-.category-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 465px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* amination */
+
+#mycircle {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 5s;
+}
+@keyframes circle {
+  25% {
+    transform: scale(1, 2);
+  }
+
+  40% {
+    transform: rotate(-20deg) scale (1, 1);
+  }
 }
