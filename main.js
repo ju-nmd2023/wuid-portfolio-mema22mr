@@ -1,5 +1,9 @@
-const inputelement = document.getElementById(¨enter-button¨);
+const msgElement = document.getElementById("msg");
 
-enter-button.addeventlistener("click", function (event) {
-    enter-button.style.buttoncolour = "#fffff";
-} ); 
+const inputElement = document.getElementById("msginput");
+
+const bottonElement = document.getElementById("enter-button");
+
+bottonElement.addEventListener("click", function (event) {
+  msgElement.innerText = "Thank you for your message!";
+});
